@@ -16,7 +16,7 @@ def main():
 	subprocess.call([sys.executable, '-m', 'pip', 'install', '{}>={}'.format('statsmodels', '0.8.0')])
 	subprocess.call([sys.executable, '-m', 'pip', 'install', '{}>={}'.format('scipy', '1.0.1')])	
 	subprocess.call([sys.executable, '-m', 'pip', 'install', '{}>={}'.format('matplotlib', '1.5.3')]) 
-	subprocess.call([sys.executable, '-m', 'pip', 'install', '{}>={}'.format('h5py', '2.6.0')])
+	subprocess.call([sys.executable, '-m', 'pip', 'install', '{}=={}'.format('h5py', '2.6.0')])
 
 	import numpy
 
@@ -27,7 +27,7 @@ def main():
 	]
 
 	setup(name = "CRADLE",
-	      version = "0.1.4",
+	      version = "0.1.5",
 	      description = "Correct Read Counts and Analysis of Differently Expressed Regions",
 	      #long_description = long_description,
 	      author = "Young-Sook Kim",
